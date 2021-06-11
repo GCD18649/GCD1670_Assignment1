@@ -24,7 +24,7 @@ namespace GCD1670_Assignment1.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        public DbSet<Category> Categories { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
